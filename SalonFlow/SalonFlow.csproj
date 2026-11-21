@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <None Update="Database.config" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AccountsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\AccountsForm.Designer.cs"><DependentUpon>AccountsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\AccountsForm.resx"><DependentUpon>AccountsForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\AppointmentsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\AppointmentsForm.Designer.cs"><DependentUpon>AppointmentsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\AppointmentsForm.resx"><DependentUpon>AppointmentsForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\AuditForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\AuditForm.Designer.cs"><DependentUpon>AuditForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\AuditForm.resx"><DependentUpon>AuditForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\BillingForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\BillingForm.Designer.cs"><DependentUpon>BillingForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\BillingForm.resx"><DependentUpon>BillingForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\BranchesForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\BranchesForm.Designer.cs"><DependentUpon>BranchesForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\BranchesForm.resx"><DependentUpon>BranchesForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\CustomersForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\CustomersForm.Designer.cs"><DependentUpon>CustomersForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\CustomersForm.resx"><DependentUpon>CustomersForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\DashboardForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\DashboardForm.Designer.cs"><DependentUpon>DashboardForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\DashboardForm.resx"><DependentUpon>DashboardForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\ExpensesForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\ExpensesForm.Designer.cs"><DependentUpon>ExpensesForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ExpensesForm.resx"><DependentUpon>ExpensesForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\InventoryForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\InventoryForm.Designer.cs"><DependentUpon>InventoryForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\InventoryForm.resx"><DependentUpon>InventoryForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\LoginForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\LoginForm.Designer.cs"><DependentUpon>LoginForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\LoginForm.resx"><DependentUpon>LoginForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\PasswordForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\PasswordForm.Designer.cs"><DependentUpon>PasswordForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\PasswordForm.resx"><DependentUpon>PasswordForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\PromotionsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\PromotionsForm.Designer.cs"><DependentUpon>PromotionsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\PromotionsForm.resx"><DependentUpon>PromotionsForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\QueueForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\QueueForm.Designer.cs"><DependentUpon>QueueForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\QueueForm.resx"><DependentUpon>QueueForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\RegisterForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\RegisterForm.Designer.cs"><DependentUpon>RegisterForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\RegisterForm.resx"><DependentUpon>RegisterForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\ReportsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\ReportsForm.Designer.cs"><DependentUpon>ReportsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ReportsForm.resx"><DependentUpon>ReportsForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\ServicesForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\ServicesForm.Designer.cs"><DependentUpon>ServicesForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ServicesForm.resx"><DependentUpon>ServicesForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="Views\StaffForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\StaffForm.Designer.cs"><DependentUpon>StaffForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\StaffForm.resx"><DependentUpon>StaffForm.cs</DependentUpon></EmbeddedResource>
+  </ItemGroup>
+</Project>
